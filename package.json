@@ -1,0 +1,23 @@
+{
+  "name": "edutechapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduTechAPI/EduTechAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EduTechAPI/EduTechAPI/issues"
+  },
+  "homepage": "https://github.com/EduTechAPI/EduTechAPI#readme",
+  "dependencies": {
+    "sqlite3": "^5.1.4"
+  }
+}
