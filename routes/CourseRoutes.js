@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { Course } = require("../models/index");
+const { Course, User } = require("../models/index");
 
 
 // GET all Courses //
@@ -21,22 +21,33 @@ router.get("/branches/:branch", async (req, res) => {
   res.json(branch);
 });
 
+router.post("/", async (req,res) => {
+    try {
+        await Course.create({
+            ...req.body
+        })
+        
+        const findAll = await Course.findAll();
+        res.json(findAll);
+    } catch (error) {
+        console.log(error)
+    }
+
+})
+
 // // PUT update duration of the course //
-// router.put("/:courseId/wa",[check("rating").not().isEmpty().trim()], async (req, res) => {
-//   const errors = validationResult(req);
-//   if (!errors.isEmpty()) {
-//     res.json({ error: errors.array() });
-//   } else {
-//   const updaterating = await Show.findByPk(req.params.showId);
-//   updaterating.update({ rating: req.body.rating });
-//   console.log("testing", req.body);
-//   res.json(updaterating);
-//   }
-// });
+router.put("/:id", async (req, res) => {
+  
+  const showToFind = await Show.findByPk(req.params.showId);
+  showToFind.update({ ...req.body });
+  console.log("testing", req.body);
+  res.json(showToFind);
+  
+});
 
 
 
-// DELETE a show //
+// DELETE a course //
 router.delete("/:id", async (req, res) => {
   const coursedelete = await Course.destroy({
     where: {

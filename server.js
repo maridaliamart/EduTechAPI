@@ -8,9 +8,9 @@ const port = 3000;
 const seed = require('./seed')
 
 const userRoutes = require('./routes/UserRoutes')
-const coursesRoutes = require('./routes/CoursesRoutes')
+const coursesRoutes = require('./routes/CourseRoutes')
 
-seed()
+// seed()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 
