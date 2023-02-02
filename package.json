@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/EduTechAPI/EduTechAPI#readme",
   "dependencies": {
+    "jest": "^29.4.1",
+    "sequelize": "^6.28.0",
     "sqlite3": "^5.1.4"
   }
 }
