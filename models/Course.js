@@ -6,6 +6,7 @@ const Course = db.define("course", {
     name: DataTypes.STRING,
     platform: DataTypes.STRING,
     instructor: DataTypes.STRING,
+    branch: DataTypes.STRING,
     duration: DataTypes.NUMBER
 });
 
