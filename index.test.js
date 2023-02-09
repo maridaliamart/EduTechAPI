@@ -1,7 +1,6 @@
 // const { DESCRIBE } = require('sequelize/types/query-types')
-const { sequelize } = require("./db");
-const { Course } = require("./models/course");
-import "babel-polyfill";
+const { sequelize } = require("./models/index");
+const { Course, Branch, User} = require("./models/index");
 
 describe(`Course model`, () => {
   test(`can create a course`, async () => {
