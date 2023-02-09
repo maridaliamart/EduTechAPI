@@ -10,9 +10,10 @@ const { JWT_SECRET } = process.env;
 const port = 3000;
 const seed = require('./seed')
 
-const { User, Course } = require('./models')
+const { User, Course, Branch } = require('./models')
 const userRoutes = require('./routes/UserRoutes')
 const coursesRoutes = require('./routes/CourseRoutes')
+const branchRoutes = require('./routes/BranchRoutes')
 
 // Middleware
 app.use(cors());
@@ -20,7 +21,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-// seed()
+seed()
 
 const {
     AUTH0_SECRET,
@@ -44,6 +45,7 @@ const { auth } = require('express-openid-connect');
 app.use(auth(config))
 app.use('/users', userRoutes)
 app.use('/courses', coursesRoutes)
+app.use('/branches', branchRoutes)
 
 app.use(async (req, res, next) => {
     // like this

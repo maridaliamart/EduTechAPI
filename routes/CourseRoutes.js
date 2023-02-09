@@ -45,8 +45,6 @@ router.put("/:id", async (req, res) => {
   
 });
 
-
-
 // DELETE a course //
 router.delete("/:id", async (req, res) => {
   const coursedelete = await Course.destroy({
@@ -56,5 +54,17 @@ router.delete("/:id", async (req, res) => {
   });
   res.json(await Course.findAll());
 });
+
+// GET courses of a particular branch //
+router.get("/branches/:branch", async (req, res) => {
+  const branch = await Course.findAll({
+    where: {
+      branch: req.params.branch,
+    },
+  });
+
+  res.json(branch);
+});
+
 
 module.exports = router;
