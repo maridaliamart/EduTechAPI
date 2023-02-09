@@ -19,20 +19,12 @@ router.get("/:id", async (req, res) => {
 });
 
 // Create a user
-router.post("/")
-
-// // PUT update duration of the course //
-// router.put("/:courseId/wa",[check("rating").not().isEmpty().trim()], async (req, res) => {
-//   const errors = validationResult(req);
-//   if (!errors.isEmpty()) {
-//     res.json({ error: errors.array() });
-//   } else {
-//   const updaterating = await Show.findByPk(req.params.showId);
-//   updaterating.update({ rating: req.body.rating });
-//   console.log("testing", req.body);
-//   res.json(updaterating);
-//   }
-// });
+router.post("/", async (req,res) => {
+  const user = await User.create({
+    ...req.body
+  })
+  res.json(`Successfully created ${user}`)
+})
 
 // DELETE a User
 router.delete("/:id", async (req, res) => {
