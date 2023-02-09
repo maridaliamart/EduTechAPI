@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { Branch } = require("../models/index");
+const { Branch, Course } = require("../models/index");
 
 
 // GET courses of a particular branch //
@@ -10,11 +10,15 @@ router.get("/", async (req, res) => {
   res.json(branch);
 });
 
-router.get("/courses/:course", async (req, res) => {
+router.get("/:id/courses", async (req, res) => {
     const course = await Branch.findAll({
+      include: [{
+        model: Course,
+        as: 'courses'
+      }],
       where: {
-        course: req.params.course,
-      },
+        id: req.params.id
+      }
     });
     res.json(course);
   });
