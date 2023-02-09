@@ -31,9 +31,22 @@ const seed = async () => {
     const UserPromises = usersData.map(user => User.create(user));
     const BranchPromises = branchesData.map(branch => Branch.create(branch))
 
-    await Promise.all(CoursePromises); // The Promise.all() method takes an iterable of promises as an input, and returns a single Promise that resolves to an array of the results of the input promises.
-    await Promise.all(UserPromises)
-    await Promise.all(BranchPromises)
+    const courses = await Promise.all(CoursePromises); // The Promise.all() method takes an iterable of promises as an input, and returns a single Promise that resolves to an array of the results of the input promises.
+    const users = await Promise.all(UserPromises)
+    const branches = await Promise.all(BranchPromises)
+
+    branches[0].setCourses([
+        courses[0],
+        courses[1],
+        courses[2],
+        
+
+    ])
+    branches[1].setCourses([
+        courses[3],
+        courses[4],
+        courses[5],
+    ])
 
     console.log("Course and User database info populated!")
 }

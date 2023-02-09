@@ -17,6 +17,24 @@
         "platform": "Udemy",
         "instructor": "Dave Smith",
         "duration": "3"
+      },
+      {
+        "name": "Cyber104",
+        "platform": "Udemy",
+        "instructor": "Dave Smith",
+        "duration": "44"
+      },
+      {
+        "name": "Cyber105",
+        "platform": "Udemy",
+        "instructor": "Dave Smith",
+        "duration": "55"
+      },
+      {
+        "name": "Cyber106",
+        "platform": "Udemy",
+        "instructor": "Dave Smith",
+        "duration": "66"
       }
     ]
   }
