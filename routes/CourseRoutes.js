@@ -10,12 +10,16 @@ router.get("/", async (req, res) => {
 });
 
 
-// GET courses of a particular branch //
-router.get("/branches/:branch", async (req, res) => {
+// GET branches of a particular course //
+router.get("/:id/branch", async (req, res) => {
   const branch = await Course.findAll({
     where: {
-      branch: req.params.branch,
+      id: req.params.id,
     },
+    include: {
+      model: Branch,
+      as: "branch"
+    }
   });
 
   res.json(branch);
