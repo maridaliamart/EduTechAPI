@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { Course, User } = require("../models/index");
+const { Course, User, Branch } = require("../models/index");
 
 
 // GET all Courses //
@@ -38,10 +38,10 @@ router.post("/", async (req,res) => {
 // // PUT update duration of the course //
 router.put("/:id", async (req, res) => {
   
-  const showToFind = await Show.findByPk(req.params.showId);
-  showToFind.update({ ...req.body });
+  const courseToFind = await Course.findByPk(req.params.courseId);
+  courseToFind.update({ ...req.body });
   console.log("testing", req.body);
-  res.json(showToFind);
+  res.json(courseToFind);
   
 });
 
