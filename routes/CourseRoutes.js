@@ -38,7 +38,7 @@ router.post("/", async (req,res) => {
 // // PUT update duration of the course //
 router.put("/:id", async (req, res) => {
   
-  const courseToFind = await Course.findByPk(req.params.courseId);
+  const courseToFind = await Course.findByPk(req.params.id);
   courseToFind.update({ ...req.body });
   console.log("testing", req.body);
   res.json(courseToFind);
@@ -53,17 +53,6 @@ router.delete("/:id", async (req, res) => {
     },
   });
   res.json(await Course.findAll());
-});
-
-// GET courses of a particular branch //
-router.get("/branches/:branch", async (req, res) => {
-  const branch = await Course.findAll({
-    where: {
-      branch: req.params.branch,
-    },
-  });
-
-  res.json(branch);
 });
 
 
