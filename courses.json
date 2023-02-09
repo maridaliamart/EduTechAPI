@@ -1,0 +1,22 @@
+{
+    "coursesData": [
+      {
+        "name": "Cyber101",
+        "platform": "Udemy",
+        "instructor": "Dave Smith",
+        "duration": "10"
+      },
+      {
+        "name": "Cyber102",
+        "platform": "Udemy",
+        "instructor": "Dave Smith",
+        "duration": "8"
+      },
+      {
+        "name": "Cyber103",
+        "platform": "Udemy",
+        "instructor": "Dave Smith",
+        "duration": "3"
+      }
+    ]
+  }
