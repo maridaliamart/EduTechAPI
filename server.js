@@ -90,18 +90,6 @@ app.get('/', (req, res) => {
     }
   })
 
-  // Courses
-
-  app.get('/courses', async (req, res, next) => {
-    try {
-      const courses = await Course.findAll();
-      res.send(courses);
-    } catch (error) {
-      console.error(error);
-      next(error);
-    }
-  });
-
 // Error Handling Middleware
 app.use((error, req, res, next) => {
     console.error('SERVER ERROR: ', error);
