@@ -1,0 +1,364 @@
+{
+    "coursesData": [
+      {
+        "name": "HTML, CSS, and Javascript for Web Developers",
+        "platform": "Coursera",
+        "instructor": "Yaakov Chaikin",
+        "duration": "40 hours"
+      },
+      {
+        "name": "Introduction to iOS Mobile Application Development",
+        "platform": "Coursera",
+        "instructor": "Meta Staff",
+        "duration": "12 hours"
+      },
+      {
+        "name": "Game Design and Development with Unity 2020 Specialization",
+        "platform": "Coursera",
+        "instructor": "Brian Winn",
+        "duration": "5 months "
+      },
+      {
+        "name": "Database systems Specialization",
+        "platform": "Coursera",
+        "instructor": "Maria del Pilar Angeles",
+        "duration": "6 months"
+      },
+      {
+        "name": "Introduction to Cloud Computing",
+        "platform": "Coursera",
+        "instructor": "Rav Ahuja",
+        "duration": "13 hours"
+      },
+      {
+        "name": "IBM Applied AI Professional Certificate",
+        "platform": "Coursera",
+        "instructor": "Rav Ahuja",
+        "duration": "6 months"
+      },
+      {
+        "name": "Machine Learning Specialization",
+        "platform": "Coursera",
+        "instructor": "Andrew Ng",
+        "duration": "3 months "
+      },
+      {
+        "name": "IBM Data Science Professional Certificate",
+        "platform": "Coursera",
+        "instructor": "Rav Ahuja",
+        "duration": "5 Months"
+      },
+      {
+        "name": "Interactive Computer Graphics",
+        "platform": "Coursera",
+        "instructor": "Takeo Igarashi",
+        "duration": "28 hours"
+      },
+      {
+        "name": "Network Security",
+        "platform": "Coursera",
+        "instructor": "ISC Education & Training",
+        "duration": "8 hours"
+      },
+      {
+        "name": "Introduction to Operating Systems Specialization",
+        "platform": "Coursera",
+        "instructor": "Patrick Ester",
+        "duration": "5 months"
+      },
+      {
+        "name": "Parallel, Concurrent, and Distributed Programming in Java Specialization",
+        "platform": "Coursera",
+        "instructor": "Vivek Sarkar",
+        "duration": "3 months"
+      },
+      {
+        "name": "Virtual Reality Specialization",
+        "platform": "Coursera",
+        "instructor": "Dr Sylvia Xueni Pan",
+        "duration": "6 month"
+      },
+      {
+        "name": "An Introduction to Programming the Internet of Things (IOT) Specialization",
+        "platform": "Coursera",
+        "instructor": "Ian Harris",
+        "duration": "6 months"
+      },
+      {
+        "name": "Software Testing and Automation Specialization",
+        "platform": "Coursera",
+        "instructor": "Sanjai Rayadurgam",
+        "duration": "4 months"
+      },
+      {
+        "name": "Post Graduate Certificate in UX Design and HCI",
+        "platform": "Coursera",
+        "instructor": "Dr. Keyur Sorathia",
+        "duration": "6 months"
+      },
+      {
+        "name": "Introduction to Embedded Systems Software and Development Environments",
+        "platform": "Coursera",
+        "instructor": "Alex Fosdick",
+        "duration": "9 hours"
+      },
+      {
+        "name": "Natural Language Processing in TensorFlow",
+        "platform": "Coursera",
+        "instructor": "Laurence Moroney",
+        "duration": "24 hours "
+      },
+      {
+        "name": "Supply Chain Finance and Blockchain Technology Specialization",
+        "platform": "Coursera",
+        "instructor": "Oliver Belin",
+        "duration": "4 months"
+      },
+      {
+        "name": "Introduction to Cybersecurity Tools & Cyber Attacks",
+        "platform": "Coursera",
+        "instructor": "IBM Security Learning Services",
+        "duration": "20 hour"
+      },
+      {
+        "name": "Intro to Programming",
+        "platform": "Udacity",
+        "instructor": "Kelly Howard",
+        "duration": "4 Months"
+      },
+      {
+        "name": "Mobile Design and Usability for iOS",
+        "platform": "Udacity",
+        "instructor": "Jeff Anders",
+        "duration": "2 Weeks"
+      },
+      {
+        "name": "2D Game Development with libGDX",
+        "platform": "Udacity",
+        "instructor": "Peter Heinrich",
+        "duration": "8 Weeks"
+      },
+      {
+        "name": "Database Systems Concepts & Design",
+        "platform": "Udacity",
+        "instructor": "Leo Mark",
+        "duration": "16 Weeks"
+      },
+      {
+        "name": "Cloud DevOps Engineer",
+        "platform": "Udacity",
+        "instructor": "Kesha Williams",
+        "duration": "4 Months"
+      },
+      {
+        "name": "Artificial Intelligence for Trading",
+        "platform": "Udacity",
+        "instructor": "Cindy Lin",
+        "duration": "6 Months"
+      },
+      {
+        "name": "AWS Machine Learning Engineer",
+        "platform": "Udacity",
+        "instructor": "Matt Maybeno",
+        "duration": "5 months"
+      },
+      {
+        "name": "Data Engineering with AWS",
+        "platform": "Udacity",
+        "instructor": "Amanda Moran",
+        "duration": "4 Months"
+      },
+      {
+        "name": "Interactive 3D Graphics",
+        "platform": "Udacity",
+        "instructor": "Eric Haines",
+        "duration": "2 Months"
+      },
+      {
+        "name": "Network Security",
+        "platform": "Udacity",
+        "instructor": "Wenke Lee",
+        "duration": "16 Weeks"
+      },
+      {
+        "name": "Introduction to Operating Systems",
+        "platform": "Udacity",
+        "instructor": "Ada Gavrilovska",
+        "duration": "2 Months"
+      },
+      {
+        "name": "Cyber-Physical Systems Security",
+        "platform": "Udacity",
+        "instructor": "Raheem Beyah",
+        "duration": "16 Weeks"
+      },
+      {
+        "name": "Introduction to Virtual Reality",
+        "platform": "Udacity",
+        "instructor": "Matt Sonic",
+        "duration": " 2 Weeks"
+      },
+      {
+        "name": "Networking for Web Developers",
+        "platform": "Udacity",
+        "instructor": "Karl Krueger",
+        "duration": "2 Weeks"
+      },
+      {
+        "name": "Software Analysis & Testing",
+        "platform": "Udacity",
+        "instructor": "Chris Pryby",
+        "duration": "16 Weeks"
+      },
+      {
+        "name": "Human-Computer Interaction",
+        "platform": "Udacity",
+        "instructor": "David Joyner",
+        "duration": "16 Weeks"
+      },
+      {
+        "name": "Embedded Systems",
+        "platform": "Udacity",
+        "instructor": "Santosh Pande",
+        "duration": "16 Weeks"
+      },
+      {
+        "name": "Natural Language Processing",
+        "platform": "Udacity",
+        "instructor": "Luis Serrano",
+        "duration": "3 Months"
+      },
+      {
+        "name": "Blockchain Developer",
+        "platform": "Udacity",
+        "instructor": "Brandy Camacho",
+        "duration": "4 Months"
+      },
+      {
+        "name": "Nanodegree Program",
+        "platform": "Udacity",
+        "instructor": "Ron Woerner",
+        "duration": "4 months"
+      },
+      {
+        "name": "The Complete 2023 Web Development Bootcamp",
+        "platform": "Udemy",
+        "instructor": "Dr. Angela Yu",
+        "duration": "66 hours"
+      },
+      {
+        "name": "Mobile App Development for Beginners",
+        "platform": "Udemy",
+        "instructor": "Ahmed Mahmoud",
+        "duration": "2 hours"
+      },
+      {
+        "name": "The Ultimate Guide to Game Development with Unity (Official)",
+        "platform": "Udemy",
+        "instructor": "Jonathan Weinberger",
+        "duration": "37 hours"
+      },
+      {
+        "name": "Database Management System from scratch ",
+        "platform": "Udemy",
+        "instructor": "Vignesh Sekar",
+        "duration": "12 hours"
+      },
+      {
+        "name": "Introduction to Cloud Computing on AWS for Beginners [2023]",
+        "platform": "Udemy",
+        "instructor": "Neal Davis",
+        "duration": "7 hours "
+      },
+      {
+        "name": "Artificial Intelligence A-Z™: Learn How To Build An AI",
+        "platform": "Udemy",
+        "instructor": "Hadelin de Ponteves",
+        "duration": "17 hours"
+      },
+      {
+        "name": "Machine Learning A-Z™: Python & R in Data Science [2023]",
+        "platform": "Udemy",
+        "instructor": "Kirill Eremenko",
+        "duration": "43 hours"
+      },
+      {
+        "name": "The Data Science Course 2023: Complete Data Science Bootcamp",
+        "platform": "Udemy",
+        "instructor": "365 Careers",
+        "duration": "32 hours"
+      },
+      {
+        "name": "Computer Graphics with Modern OpenGL and C++",
+        "platform": "Udemy",
+        "instructor": "Ben Cook",
+        "duration": "22 hours"
+      },
+      {
+        "name": "The Complete Cyber Security Course : Network Security!",
+        "platform": "Udemy",
+        "instructor": "Nathan House",
+        "duration": "13 hours"
+      },
+      {
+        "name": "Operating System",
+        "platform": "Udemy",
+        "instructor": "Edutainer India",
+        "duration": "8 hours"
+      },
+      {
+        "name": "Distributed Systems & Cloud Computing with Java",
+        "platform": "Udemy",
+        "instructor": "Michael Pogrebinsky ",
+        "duration": "8 hours"
+      },
+      {
+        "name": "Multiplayer Virtual Reality (VR) Development With Unity",
+        "platform": "Udemy",
+        "instructor": "Tevfik Ufuk ",
+        "duration": "10 hours"
+      },
+      {
+        "name": "The Complete Internet of Things (IoT) Course for Beginners",
+        "platform": "Udemy",
+        "instructor": "Online Courses Tutorials",
+        "duration": "1 hour"
+      },
+      {
+        "name": "The Complete 2023 Software Testing Bootcamp",
+        "platform": "Udemy",
+        "instructor": "T Roshdy",
+        "duration": "28 hours"
+      },
+      {
+        "name": "Human Computer Interaction & Machine Learning",
+        "platform": "Udemy",
+        "instructor": "Kaneeka Vidanage",
+        "duration": "8 hours"
+      },
+      {
+        "name": "Embedded Systems Programming on ARM Cortex-M3/M4 Processor",
+        "platform": "Udemy",
+        "instructor": "Kiran Nayak",
+        "duration": "16 hours"
+      },
+      {
+        "name": "NLP - Natural Language Processing with Python",
+        "platform": "Udemy",
+        "instructor": "Jose Portilla",
+        "duration": "12 hours"
+      },
+      {
+        "name": "Blockchain A-Z™: Learn How To Build Your First Blockchain",
+        "platform": "Udemy",
+        "instructor": "Hadelin de Ponteves",
+        "duration": "15 hours"
+      },
+      {
+        "name": "CompTIA Security+ (SY0-601) Complete Course & Exam",
+        "platform": "Udemy",
+        "instructor": "Jason Dion",
+        "duration": "22 hours"
+      }
+    ]
+  }

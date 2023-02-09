@@ -7,7 +7,7 @@ const Course = db.define("course", {
     platform: DataTypes.STRING,
     instructor: DataTypes.STRING,
     branch: DataTypes.STRING,
-    duration: DataTypes.NUMBER
+    duration: DataTypes.STRING
 });
 
 //exports
