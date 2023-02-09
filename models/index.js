@@ -8,4 +8,4 @@ User.hasMany(Course)
 Course.belongsTo(Branch)
 Branch.hasMany(Course)
 
-module.exports = {Course, User}
+module.exports = {Course, User, Branch}
