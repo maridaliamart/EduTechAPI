@@ -5,7 +5,6 @@ const { db, DataTypes } = require('../db')
 const User = db.define("user", {
     name: DataTypes.STRING,
     email: DataTypes.STRING,
-    password: DataTypes.STRING,
 });
 
 //exports
