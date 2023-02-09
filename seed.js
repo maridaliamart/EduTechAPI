@@ -48,7 +48,7 @@ const seed = async () => {
         courses[5],
     ])
 
-    console.log("Course and User database info populated!")
+    console.log("Courses, Users, and Branches have been populated into the database!")
 }
 
 //export my seed function
