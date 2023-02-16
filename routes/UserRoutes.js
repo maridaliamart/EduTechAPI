@@ -28,7 +28,7 @@ router.post("/", async (req,res) => {
 
 // DELETE a User
 router.delete("/:id", async (req, res) => {
-  const userToDelete = await User.destroy({
+  await User.destroy({
     where: {
       id: req.params.id,
     },

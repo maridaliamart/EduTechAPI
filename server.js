@@ -54,7 +54,6 @@ app.use(async (req, res, next) => {
         // properties mentioned above
         name: `${req.oidc.user.name}`,
         email: `${req.oidc.user.email}`,
-  
       }
     });
     console.log(user)
@@ -89,6 +88,19 @@ app.get('/', (req, res) => {
     }catch(error){
       console.error(error);
       next(error);
+    }
+  })
+  
+  // Update User Route.
+  app.put("/me", async(req, res) => {
+    try {
+      let updatedUser = await User.update(req.body, {
+        where: {email: req.oidc.user.email},
+        returning: true
+      })
+      res.send(updatedUser)
+    } catch (error) {
+      throw error
     }
   })
 
