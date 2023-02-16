@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { Course } = require("../models/index");
+const { Course, User, Branch } = require("../models/index");
 
 
 // GET all Courses //
@@ -10,33 +10,46 @@ router.get("/", async (req, res) => {
 });
 
 
-// GET courses of a particular branch //
-router.get("/branches/:branch", async (req, res) => {
+// GET branches of a particular course //
+router.get("/:id/branch", async (req, res) => {
   const branch = await Course.findAll({
     where: {
-      branch: req.params.branch,
+      id: req.params.id,
     },
+    include: {
+      model: Branch,
+      as: "branch"
+    }
   });
 
   res.json(branch);
 });
 
+router.post("/", async (req,res) => {
+    try {
+        await Course.create({
+            ...req.body
+        })
+        
+        const findAll = await Course.findAll();
+        res.json(findAll);
+    } catch (error) {
+        console.log(error)
+    }
+
+})
+
 // // PUT update duration of the course //
-// router.put("/:courseId/wa",[check("rating").not().isEmpty().trim()], async (req, res) => {
-//   const errors = validationResult(req);
-//   if (!errors.isEmpty()) {
-//     res.json({ error: errors.array() });
-//   } else {
-//   const updaterating = await Show.findByPk(req.params.showId);
-//   updaterating.update({ rating: req.body.rating });
-//   console.log("testing", req.body);
-//   res.json(updaterating);
-//   }
-// });
+router.put("/:id", async (req, res) => {
+  
+  const courseToFind = await Course.findByPk(req.params.id);
+  courseToFind.update({ ...req.body });
+  console.log("testing", req.body);
+  res.json(courseToFind);
+  
+});
 
-
-
-// DELETE a show //
+// DELETE a course //
 router.delete("/:id", async (req, res) => {
   const coursedelete = await Course.destroy({
     where: {
@@ -45,5 +58,6 @@ router.delete("/:id", async (req, res) => {
   });
   res.json(await Course.findAll());
 });
+
 
 module.exports = router;
