@@ -3,13 +3,20 @@
       {
         "name": "testUser",
         "email": "testUser@gmail.com",
-        "password": "ThisIsA"
+        "password": "ThisIsA",
+        "roles": {
+          "User": 2001
+        }
 
       },
       {
         "name": "someone",
         "email": "someone@gmail.com",
-        "password": "asdfsAS2@1"
+        "password": "asdfsAS2@1",
+        "roles": {
+          "User": 2001,
+          "Admin": 5150
+        }
       }
     ]
   }

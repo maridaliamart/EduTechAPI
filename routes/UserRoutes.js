@@ -5,8 +5,16 @@ const { User } = require("../models/index");
 
 // GET all Users 
 router.get("/", async (req, res) => {
-  const user = await User.findAll();
-  res.json(user);
+  const user = await User.findOne({
+    where: {
+      email: req.oidc.user.email
+    }
+  })
+  console.log(`${req.oidc.user}`)
+  console.log(`Brynner: ${user}`)
+  // if (!Object.values(user[roles].includes({"User": 2001}))) { return }
+  const users = await User.findAll();
+  res.json(users);
 });
 
 
@@ -21,9 +29,12 @@ router.get("/:id", async (req, res) => {
 // Create a user
 router.post("/", async (req,res) => {
   const user = await User.create({
-    ...req.body
+    ...req.body,
+    roles: {
+      "User": 2001
+    }
   })
-  res.json(`Successfully created ${user}`)
+  res.json(`Successfully created ${user} with the role of ${user.roles}`)
 })
 
 // DELETE a User

@@ -54,6 +54,9 @@ app.use(async (req, res, next) => {
         // properties mentioned above
         name: `${req.oidc.user.name}`,
         email: `${req.oidc.user.email}`,
+        roles: {
+          "User": 2001
+        }
       }
     });
     console.log(user)
@@ -63,11 +66,12 @@ app.use(async (req, res, next) => {
 // Get request
 
 app.get('/', (req, res) => {
-    res.send(req.oidc.isAuthenticated() ? 
+    res.send(req.oidc.isAuthenticated() ?
      `<h1>EduTech</h1>
       <h2> Welcome back ${req.oidc.user.name} </h2>
       <p>Email: ${req.oidc.user.email}</p>
-      <img src=${req.oidc.user.picture}/>`
+      <img src=${req.oidc.user.picture}/>
+      ${console.log(req.oidc.user)}`
    : 'Logged out');
   });
 
@@ -113,5 +117,5 @@ app.use((error, req, res, next) => {
 
 app.listen(port, () => {
     db.sync();
-    console.log(`Server started on port ${port}`);
+    console.log(`Server started on port http://localhost:${port}`);
 })
