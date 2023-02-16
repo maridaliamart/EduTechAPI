@@ -6,7 +6,7 @@ const Course = db.define("course", {
     name: DataTypes.STRING,
     platform: DataTypes.STRING,
     instructor: DataTypes.STRING,
-    duration: DataTypes.NUMBER
+    duration: DataTypes.STRING
 });
 
 //exports
