@@ -6,6 +6,14 @@ The EduTechAPI project is a comprehensive and efficient way for developers to ac
 ![Screenshot 2023-02-09 11 40 26 AM](https://user-images.githubusercontent.com/109438051/217884375-7a3e3698-49c3-4059-b244-8b6022ef1367.png)
 
 
+## Collaborators
+
+
+[Shir](https://github.com/shirkocurek)\
+[Brynner](https://github.com/Brynner03)\
+[Maridalia](https://github.com/maridaliamart)
+
+
 ### Tier 1 — MVP Application - CRUD and REST ✔️
 
 -As a User, I want to read entries from the database
@@ -70,6 +78,40 @@ In addition to the Tier 1 MVP criteria…
 -As an Admin, I want to be able to edit other users’ information via the API
 
 -As an Admin, I want to be able to delete or edit any entity, regardless of user/owner
+
+
+### Bonus Goal 1: Front End Login ✔️
+
+-As a User, I want to be able to use a client-side form to Log in/out of my application.
+
+-As a User, I want to be able to sign up using a client-side form.
+
+-This could be via a traditional web form, or more preferably, with a React app.
+
+
+### Bonus Goal 2: Seed ✔️
+
+-As a Developer cloning the repo for the first time, I want to be able to run a seed command and have the database populated with data.
+
+-As a Developer, I want multiple users to be seeded to the database.
+
+
+### Bonus Goal 3: Testing ✔️
+
+-As a Developer, I want to be able to run a test commend (such as npm test or the command specific to your technology/project) and have all my tests run.
+
+-As a Developer, I want to know if my new code has broken anything (passing tests means it theoretically didn’t).
+
+
+### Bonus Goal 7: Front End Application ✔️
+
+-As a User, I want to access, create, edit, and delete my data all from a front-end GUI application.
+
+-As a returning user, I want to be automatically logged in, instead of having to enter my credentials each time I revisit the application.
+
+-As a User, I want my app to be visually stunning.
+
+
 
 
 ## Installation
