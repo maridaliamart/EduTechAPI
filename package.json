@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "client-dev": "parcel public/index.html --open",
+    "server-dev": "nodemon server.js",
+    "start": "parcel public/index.html && node server.js"
   },
   "repository": {
     "type": "git",
@@ -28,7 +31,10 @@
     "jest": "^29.4.1",
     "jsonwebtoken": "^9.0.0",
     "morgan": "^1.10.0",
+    "parcel": "^2.8.3",
+    "parcel-bundler": "^1.12.5",
     "path": "^0.12.7",
+    "react": "^18.2.0",
     "sequelize": "^6.28.0",
     "sqlite3": "^5.1.4",
     "supertest": "^6.3.3"
