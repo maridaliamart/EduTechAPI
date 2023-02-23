@@ -130,11 +130,11 @@ const seed = async () => {
         courses[38],
         courses[58],
     ])
-    branches[19].setCourses([
-        courses[19],
-        courses[39],
-        courses[59],
-    ])
+    // branches[19].setCourses([
+    //     courses[19],
+    //     courses[39],
+    //     courses[59],
+    // ])
     console.log("Courses, Users, and Branches have been populated into the database!")
 }
 
