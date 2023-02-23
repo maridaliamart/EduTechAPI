@@ -1,10 +1,52 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
-    background-color: rgb(223, 223, 223);
-  }
-  
-  main {
-    padding: 1rem;
-    height: 100vh;
-  }
+.footer{
+  padding: 1rem;
+  background-color: #fdfdfd;
+  position: absolute fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.facebook {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/739/739237.png');
+  height: 20px;
+  width: 20px;
+  margin-top: 25px;
+  background-size: 100%;
+  border:none;
+  margin-right: 1em;
+}
+
+.instagram {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/1077/1077042.png');
+  height: 20px;
+  width: 20px;
+  margin-top: 25px;
+  background-size: 100%;
+  border:none;
+  margin-right: 1em;
+}
+
+.twitter {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/733/733635.png');
+  height: 20px;
+  width: 20px;
+  margin-top: 25px;
+  background-size: 100%;
+  border:none;
+  margin-right: 1em;
+}
+
+.pinterest {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/2175/2175205.png');
+  height: 20px;
+  width: 20px;
+  margin-top: 25px;
+  background-size: 100%;
+  border:none;
+  margin-right: 1em;
+}
+
+.footerTag{
+  margin-top: 1em;
+}
