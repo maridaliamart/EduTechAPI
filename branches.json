@@ -1,17 +1,62 @@
 {
     "branchesData": [
       {
-        "name": "Front-End Developer"
-      },
-      {
-        "name": "Back-End Developer"
-      }, {
-        "name": "Cyber-Security"
-      }, {
-        "name": "Dev-Ops"
-      }, {
-        "name": "Blockchain Developer"
-      }
+        "name": "Web Development"
+      },				
+      {				
+        "name": "Mobile Application Development"
+      },				
+      {				
+	      "name": "Game Development"
+      },				
+      {				
+	      "name": "Database Systems"
+      },				
+      {				
+	      "name": "Cloud Computing"
+      },				
+      {				
+	      "name": "Artificial Intelligence"
+      },				
+      {				
+	      "name": "Machine Learning"
+      },				
+      {				
+	      "name": "Data Science"
+      },				
+      {				
+	      "name": "Computer Graphics"
+      },				
+      {				
+	      "name": "Network Security"
+      },				
+      {				
+	      "name": "Operating Systems"
+      },				
+      {				
+	      "name": "Distributed Systems"
+      },				
+      {				
+	      "name": "Virtual Reality"
+      },				
+      {				
+	      "name": "Internet of Things (IoT)"
+      },				
+      {				
+	      "name": "Software Testing and Quality Assurance"
+      },				
+      {				
+	      "name": "Human Computer Interaction (HCI)"
+      },				
+      {				
+	      "name": "Embedded Systems"
+      },				
+      {				
+	      "name": "Natural Language Processing (NLP)"
+      },				
+      {				
+	      "name": "Blockchain Technology"
+      }		
     ]
   }
   
