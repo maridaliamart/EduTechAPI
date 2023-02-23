@@ -1,11 +1,15 @@
 import React from "react";
+import { Footer } from "./Footer";
+import { Documentation } from "./Documentation";
 
 export const App = () => {
     return (
         <main>
-            <div>
-                <h1>Hello</h1>
+            <div class="upperdiv">
+                <h1 class="Edu">EduTechAPI</h1>
             </div>
+            <Documentation/>
+            <Footer/>
         </main>
     )
 }

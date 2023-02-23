@@ -1,10 +1,90 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
-    background-color: rgb(223, 223, 223);
-  }
-  
-  main {
-    padding: 1rem;
-    height: 100vh;
-  }
+
+@import url('https://fonts.googleapis.com/css2?family=Aleo&family=Arimo&family=Julius+Sans+One&family=Koulen&family=Oxygen&family=Questrial&family=Quicksand:wght@300&family=Staatliches&display=swap');
+
+
+.upperdiv{
+ background-color:	#006767;
+ border: 0;
+ padding: 50px;
+}
+
+.Edu{
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 75px;
+  color: #f0ffff;
+  border-color: black;
+  font-style: italic;
+  text-shadow: 3px 0 black, 0 3px black, 3px 0 black, 0 3px black;
+}
+
+.documentation{
+  position: absolute fixed;
+  font-family: Arimo;
+}
+
+
+.footer{
+  padding: 1rem;
+  color: black;
+  position: absolute fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: Arimo;
+  text-align: center;
+  background-color: #006767;
+  font-size: 16px;
+}
+
+.facebook {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/739/739237.png');
+  height: 20px;
+  width: 20px;
+  margin-top: 25px;
+  background-size: 100%;
+  border:none;
+  margin-right: 1em;
+  background-color: #006767;
+}
+
+.instagram {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/1077/1077042.png');
+  height: 20px;
+  width: 20px;
+  margin-top: 25px;
+  background-size: 100%;
+  border:none;
+  margin-right: 1em;
+  background-color: #006767;
+}
+
+.twitter {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/733/733635.png');
+  height: 20px;
+  width: 20px;
+  margin-top: 25px;
+  background-size: 100%;
+  border:none;
+  margin-right: 1em;
+  background-color: #006767;
+}
+
+.pinterest {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/2175/2175205.png');
+  height: 20px;
+  width: 20px;
+  margin-top: 25px;
+  background-size: 100%;
+  border:none;
+  margin-right: 1em;
+  background-color: #006767;
+}
+
+.footerTag{
+  margin-top: 1em;
+}
+
+.jsondata {
+  font-family: Arimo;
+  font-size: small;
+}
