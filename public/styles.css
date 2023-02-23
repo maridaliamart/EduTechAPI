@@ -21,6 +21,7 @@
 .documentation{
   position: absolute fixed;
   font-family: Arimo;
+  font-size: small;
   background-color: #ebf1ee;
 }
 
