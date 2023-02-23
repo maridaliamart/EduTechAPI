@@ -8,11 +8,12 @@ router.get("/", async (req, res) => {
   const user = await User.findOne({
     where: {
       email: req.oidc.user.email
-    }
+    },
+      raw: true,
   })
   console.log(`${req.oidc.user}`)
-  console.log(`Brynner: ${user}`)
-  // if (!Object.values(user[roles].includes({"User": 2001}))) { return }
+  // console.log(`Brynner: ${user.roles}`)
+  // if (user.roles !=={"User": 2001,"Admin": 5150}) { return }
   const users = await User.findAll();
   res.json(users);
 });

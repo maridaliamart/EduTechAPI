@@ -53,12 +53,17 @@ app.use(async (req, res, next) => {
       where: {
         // properties mentioned above
         name: `${req.oidc.user.name}`,
-        email: `${req.oidc.user.email}`,
-        roles: {
-          "User": 2001
-        }
+        email: `${req.oidc.user.email}`
+      }, 
+      roles: {
+        "User": 2001
       }
-    });
+    })
+    // if(!user.roles) {
+    //   user.roles = {
+    //       "User": 2001
+    //   }
+    // }
     console.log(user)
     next()
   });  

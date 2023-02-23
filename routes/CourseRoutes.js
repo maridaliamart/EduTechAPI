@@ -51,7 +51,7 @@ router.put("/:id", async (req, res) => {
 
 // DELETE a course //
 router.delete("/:id", async (req, res) => {
-  const coursedelete = await Course.destroy({
+   await Course.destroy({
     where: {
       id: req.params.id,
     },
