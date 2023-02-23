@@ -1,10 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aleo&family=Arimo&family=Julius+Sans+One&family=Koulen&family=Oxygen&family=Questrial&family=Quicksand:wght@300&family=Staatliches&display=swap');
+
+
+.upperdiv{
+ background-color:	#006767;
+ border: 0;
+ padding: 50px;
+}
+
+.Edu{
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 75px;
+  color: #f0ffff;
+  border-color: black;
+  font-style: italic;
+  text-shadow: 3px 0 black, 0 3px black, 3px 0 black, 0 3px black;
+}
+
+.documentation{
+  position: absolute fixed;
+  font-family: Arimo;
+}
+
+
 .footer{
   padding: 1rem;
-  background-color: #fdfdfd;
+  color: black;
   position: absolute fixed;
   bottom: 0;
-  left: 0;
   width: 100%;
+  font-family: Arimo;
+  text-align: center;
+  background-color: #006767;
+  font-size: 16px;
 }
 
 .facebook {
@@ -15,6 +44,7 @@
   background-size: 100%;
   border:none;
   margin-right: 1em;
+  background-color: #006767;
 }
 
 .instagram {
@@ -25,6 +55,7 @@
   background-size: 100%;
   border:none;
   margin-right: 1em;
+  background-color: #006767;
 }
 
 .twitter {
@@ -35,6 +66,7 @@
   background-size: 100%;
   border:none;
   margin-right: 1em;
+  background-color: #006767;
 }
 
 .pinterest {
@@ -45,8 +77,14 @@
   background-size: 100%;
   border:none;
   margin-right: 1em;
+  background-color: #006767;
 }
 
 .footerTag{
   margin-top: 1em;
+}
+
+.jsondata {
+  font-family: Arimo;
+  font-size: small;
 }
