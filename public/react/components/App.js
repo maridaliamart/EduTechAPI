@@ -2,7 +2,11 @@ import React, {useEffect} from "react";
 import { Footer } from "./Footer";
 import apiURL from './api';
 
+import { Documentation } from "./Documentation";
+
+
 export const App = () => {
+
     async function fetchUsers(){
 		try {
 			const response = await fetch(`${apiURL}/users`);
@@ -20,9 +24,10 @@ export const App = () => {
 
     return (
         <main>
-            <div>
-                <h1>Hello&#123;</h1>
+            <div class="upperdiv">
+                <h1 class="Edu">EduTechAPI</h1>
             </div>
+            <Documentation/>
             <Footer/>
         </main>
     )
