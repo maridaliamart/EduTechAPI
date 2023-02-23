@@ -25,6 +25,7 @@ router.get("/:id/branch", async (req, res) => {
   res.json(branch);
 });
 
+//Post a course //
 router.post("/", async (req,res) => {
     try {
         await Course.create({
@@ -39,7 +40,7 @@ router.post("/", async (req,res) => {
 
 })
 
-// // PUT update duration of the course //
+// PUT update a course //
 router.put("/:id", async (req, res) => {
   
   const courseToFind = await Course.findByPk(req.params.id);
