@@ -25,7 +25,7 @@ export const App = () => {
     return (
         <main>
             <div class="upperdiv">
-                <h1 class="Edu">EduTechAPI</h1>
+                <h1 class="Edu">EduTech API</h1>
             </div>
             <Documentation/>
             <Footer/>

@@ -1,34 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo&family=Arimo&family=Julius+Sans+One&family=Koulen&family=Oxygen&family=Questrial&family=Quicksand:wght@300&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Aleo&family=Arimo&family=Julius+Sans+One&family=Koulen&family=Oxygen&family=Questrial&family=Quicksand:wght@300&family=Staatliches&display=swap');
-
-
-.upperdiv{
- background-color:	#006767;
- border: 0;
- padding: 50px;
+.upperdiv {
+  background-color: #006767;
+  border: 0;
+  padding: 50px;
+  margin-bottom: 100px;
 }
 
-.Edu{
+.Edu {
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 75px;
-  color: #ebf1ee;
+  font-family: 'K2D', sans-serif;
+  font-size: 60px;
+  color: #fff;
   border-color: black;
-  font-style: italic;
-  text-shadow: 3px 0 black, 0 3px black, 3px 0 black, 0 3px black;
 }
 
-.documentation{
+.documentation {
   position: absolute fixed;
   font-family: Arimo;
   font-size: small;
-  background-color: #ebf1ee;
+  background-color: #fff;
+  text-align: center;
 }
 
+.docchild {
+  display: inline-block;
+  text-align: left;
+  max-width: 700px;
+}
 
-.footer{
+.footer {
   padding: 1rem;
-  color: black;
+  color: #fff;
   position: absolute fixed;
   bottom: 0;
   width: 100%;
@@ -36,53 +40,74 @@
   text-align: center;
   background-color: #006767;
   font-size: 16px;
+  margin-top: 75px;
 }
 
 .facebook {
-  background-image: url('https://cdn-icons-png.flaticon.com/512/739/739237.png');
+  background-image: url("https://cdn-icons-png.flaticon.com/512/739/739237.png");
   height: 20px;
   width: 20px;
   margin-top: 25px;
   background-size: 100%;
-  border:none;
+  border: none;
   margin-right: 1em;
   background-color: #006767;
+}
+
+.facebook:hover {
+  cursor: pointer;
+  transform: scale(1.5);
 }
 
 .instagram {
-  background-image: url('https://cdn-icons-png.flaticon.com/512/1077/1077042.png');
+  background-image: url("https://cdn-icons-png.flaticon.com/512/1077/1077042.png");
   height: 20px;
   width: 20px;
   margin-top: 25px;
   background-size: 100%;
-  border:none;
+  border: none;
   margin-right: 1em;
   background-color: #006767;
+}
+
+.instagram:hover {
+  cursor: pointer;
+  transform: scale(1.5);
 }
 
 .twitter {
-  background-image: url('https://cdn-icons-png.flaticon.com/512/733/733635.png');
+  background-image: url("https://cdn-icons-png.flaticon.com/512/733/733635.png");
   height: 20px;
   width: 20px;
   margin-top: 25px;
   background-size: 100%;
-  border:none;
+  border: none;
   margin-right: 1em;
   background-color: #006767;
+}
+
+.twitter:hover {
+  cursor: pointer;
+  transform: scale(1.5);
 }
 
 .pinterest {
-  background-image: url('https://cdn-icons-png.flaticon.com/512/2175/2175205.png');
+  background-image: url("https://cdn-icons-png.flaticon.com/512/2175/2175205.png");
   height: 20px;
   width: 20px;
   margin-top: 25px;
   background-size: 100%;
-  border:none;
+  border: none;
   margin-right: 1em;
   background-color: #006767;
 }
 
-.footerTag{
+.pinterest:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.footerTag {
   margin-top: 1em;
 }
 

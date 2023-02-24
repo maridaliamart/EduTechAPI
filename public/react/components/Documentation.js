@@ -12,6 +12,7 @@ const branch = {
 
 export const Documentation = () => (
   <div class="documentation">
+    <div class="docchild">
     <h1 tabIndex={0}>Documentation</h1>
     <br />
     <h2 tabIndex={0}>Overview</h2>
@@ -29,9 +30,6 @@ export const Documentation = () => (
     <h5 tabIndex={0}>
       `GET /courses/course_id`: Retrieve details for a specific course,
       including information on the course name, instructor, and duration.
-    </h5>
-    <h5 tabIndex={0}>
-      `program_id`: Filters the list of courses by the program id.
     </h5>
     <br />
     <h3 tabIndex={0}>Branches</h3>
@@ -52,9 +50,9 @@ export const Documentation = () => (
         <br />
         "name": "{course.name}",
         <br />
-        "platform": "{course.platform}"
+        "platform": "{course.platform}",
         <br />
-        "instructor": "{course.instructor}"
+        "instructor": "{course.instructor}",
         <br />
         "duration": "{course.duration}"
         <br />
@@ -68,11 +66,12 @@ export const Documentation = () => (
         <br />
         "id": "1",
         <br />
-        "name": "{branch.name}",
+        "name": "{branch.name}"
         <br />
         &#125;
       </p>
       <br/>
     </div>
+  </div>
   </div>
 );
