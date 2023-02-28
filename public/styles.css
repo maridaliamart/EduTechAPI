@@ -3,25 +3,27 @@
 
 .upperdiv {
   background-color: #006767;
-  border: 0;
-  padding: 50px;
+  padding-top: 50px;
   margin-bottom: 100px;
 }
 
 .Edu {
   text-align: center;
-  font-family: 'K2D', sans-serif;
+  font-family: "K2D", sans-serif;
   font-size: 60px;
   color: #fff;
   border-color: black;
 }
 
 .documentation {
-  position: absolute fixed;
   font-family: Arimo;
-  font-size: small;
+  position: absolute fixed;
   background-color: #fff;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .docchild {
@@ -114,4 +116,80 @@
 .jsondata {
   font-family: Arimo;
   font-size: small;
+}
+
+.documentheader {
+  font-size: 40px;
+}
+
+.aboutheader {
+  font-size: 40px;
+}
+
+.about {
+  position: absolute fixed;
+  font-family: Arimo;
+  font-size: small;
+  background-color: #fff;
+  text-align: center;
+}
+
+.aboutpara {
+  font-family: Arimo;
+  background-color: #fff;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  position:relative;
+  width:1000px;
+  padding:10px;
+  background-color:lightblue;
+  left: 800px;
+
+}
+
+.datadisplay {
+  position: relative;
+  font-family: Arimo;
+  background-color: #fff;
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+  align-items: center;
+  height: 700px;
+  border-radius: 8px;
+  width:1000px;
+  padding:10px;
+  left: 800px;
+}
+
+.Main {
+  position: absolute fixed;
+  font-family: Arimo;
+  background-color: #fff;
+  text-align: center;
+}
+
+
+.mainbutton {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  width: 120px;
+  text-align: center;
+  font-family: "K2D", sans-serif;
+}
+
+.mainbutton:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.selectabranch {
+  font-family: "K2D", sans-serif;
 }
