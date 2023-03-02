@@ -7,6 +7,7 @@ import apiURL from "./api";
 import { Menu, MenuItem, MenuButton } from '@szhsin/react-menu';
 import '@szhsin/react-menu/dist/index.css';
 import '@szhsin/react-menu/dist/transitions/slide.css';
+import { BrowserRouter, Router, Routes, Route, useNavigate } from "react-router-dom";
 
 export const App = () => {
 
@@ -37,15 +38,10 @@ export const App = () => {
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
+  const navigate = useNavigate()
 
   const goBack = async () => {
-    try {
-      const response = await fetch(`${apiURL}//`);
-      const allData = await response.json();
-      setMain(allData);
-    } catch (err) {
-      console.log("Oh no an error! ", err);
-    }
+   navigate("/")
   };
 
   const handleSubmit = async (e) => {
@@ -65,6 +61,16 @@ export const App = () => {
     const data = await response.json();
   };
 
+  
+
+  const goToAboutPage = () => {
+    navigate("/about")
+  }
+
+  const goToDocumentation = () => {
+    navigate("/documentation")
+  }
+
   return (
     <main>
       <div className="upperdiv">
@@ -72,11 +78,16 @@ export const App = () => {
 		</div>
         <Menu menuButton={<MenuButton className="menutoggle">Open menu</MenuButton>} transition>
           <MenuItem onClick={()=>{goBack()}} className="menustyle">Home</MenuItem>
-          <MenuItem className="menustyle">About</MenuItem>
-          <MenuItem className="menustyle">Documentation</MenuItem>
+          <MenuItem onClick={()=>{goToAboutPage()}}className="menustyle">About</MenuItem>
+          <MenuItem onClick={()=>{goToDocumentation()}} className="menustyle">Documentation</MenuItem>
         </Menu>
-      <Main />
-      <Footer />
+      <Routes>
+          <Route path="about" element={<About />} />
+          <Route path="documentation" element={<Documentation/>}/>
+          <Route index element={<Main />}>
+        </Route>
+      </Routes>
+    <Footer />
     </main>
   );
 };
