@@ -58,7 +58,10 @@ export const App = () => {
             <div class="upperdiv">
                 <h1 class="Edu">EduTech API</h1>
             </div>
+            <Main/>
+            <br/>
             <Documentation/>
+            <About/>
             <Footer/>
         </main>
     )

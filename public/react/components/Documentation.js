@@ -71,6 +71,7 @@ export const Documentation = () => (
       </p>
       <br/>
     </div>
+    <button className='buttonBack' onClick={()=>{goBack()}}>Back</button>
   </div>
   </div>
 );
