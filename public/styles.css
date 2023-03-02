@@ -44,7 +44,7 @@
   text-align: center;
   background-color: #006767;
   font-size: 18px;
-  margin-top: 75px;
+  margin-top: 200px;
 }
 
 .facebook {
@@ -235,4 +235,27 @@
   cursor: pointer;
   transform: scale(1.25);
   border-radius: 5px;
+}
+
+.menustyle {
+  font-family: "K2D", sans-serif;
+}
+
+.menutoggle {
+  font-family: "K2D", sans-serif;
+  background-color: #fff;
+  border-radius: 3px;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  font-family: "K2D", sans-serif;
+  margin: auto;
+  font-size: 14px;
+}
+
+.menutoggle:hover {
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  
+  
 }
