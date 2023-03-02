@@ -12,6 +12,14 @@ const branch = {
   name: "Cloud Computing",
 };
 
+const user = {
+    name: "testUser",
+    email: "testUser@gmail.com",
+    password: "ThisIsA",
+    roles: "User"
+    
+};
+
 export const Documentation = () => {
   const navigate = useNavigate();
 
@@ -53,7 +61,7 @@ export const Documentation = () => {
         <h1 tabIndex={0}>Data Models</h1>
         <h3 tabIndex={0}>Course</h3>
         <div className="data models">
-          <p tabIndex={0} class="jsondata">
+          <p tabIndex={0} className="jsondata">
             &#123;
             <br />
             "id": "1",
@@ -71,7 +79,7 @@ export const Documentation = () => {
 
           <br />
           <h3 tabIndex={0}>Branch</h3>
-          <p tabIndex={0} class="jsondata">
+          <p tabIndex={0} className="jsondata">
             &#123;
             <br />
             "id": "1",
@@ -81,6 +89,22 @@ export const Documentation = () => {
             &#125;
           </p>
           <br />
+          <h3 tabIndex={0}>User</h3>
+          <p tabIndex={0} className="jsondata">
+            &#123;
+            <br />
+            "id": "1",
+            <br />
+            "name": "{user.name}"
+            <br />
+            "email": "{user.email}"
+            <br/>
+            "password": "{user.password}"
+            <br/>
+            "roles": "{user.roles}"
+            <br/>
+            &#125;
+          </p>
         </div>
         <button
           className="buttonBack"
