@@ -33,7 +33,7 @@ export const About = () => {
         </p>
       </div>
       <button
-        className="buttonBack"
+        className="buttonBack1"
         onClick={() => {
           goBack();
         }}
