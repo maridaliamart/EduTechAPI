@@ -11,9 +11,9 @@ const branch = {
 };
 
 export const Documentation = () => (
-  <div class="documentation">
-    <div class="docchild">
-    <h1 class="documentheader" tabIndex={0}>Documentation</h1>
+  <div className="documentation">
+    <div className="docchild">
+    <h1 className="documentheader" tabIndex={0}>Documentation</h1>
     <br />
     <h1 tabIndex={0}>Overview</h1>
     <h3 tabIndex={0}>
@@ -41,7 +41,7 @@ export const Documentation = () => (
     <br />
     <h1 tabIndex={0}>Data Models</h1>
     <h3 tabIndex={0}>Course</h3>
-    <div class="data models">
+    <div className="data models">
       <p tabIndex={0} class="jsondata">
         &#123;
         <br />

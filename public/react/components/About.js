@@ -1,10 +1,22 @@
 import React from "react";
+import React, { useEffect, useState } from "react";
+
+const goBack = async () => {
+  try {
+    const response = await fetch(`${apiURL}/wiki/`);
+    const allData = await response.json();
+    setMain(allData);
+  } catch (err) {
+    console.log("Oh no an error! ", err);
+  }
+};
 
 export const About = () => (
-  <div class="about">
-    <h1 tabindex="0" class="aboutheader">About</h1>
-    <div class="aboutpara">
-    <p tabindex="0">
+
+  <div className="about">
+    <h1 tabIndex="0" className="aboutheader">About</h1>
+    <div className="aboutpara">
+    <p tabIndex="0">
       The EduTech API is a tool designed to help individuals interested in
       pursuing a career in software engineering. This API provides detailed
       information about courses within specific branches of the software

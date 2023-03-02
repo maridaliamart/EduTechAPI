@@ -2,9 +2,9 @@ import React from "react";
 
 export const Main = () => (
     <div className="Main">
-      <div className="intro"><p tabindex="0">The EduTechAPI project is a comprehensive and efficient way for developers to access the most up to date data about the latest top tech courses. Built using Node.js and Express, it is designed to be easy to use and integrate into existing systems. Developers can select a tech branch of their choice, and receive a list of courses from the top 5 online education platforms. Join us in creating a powerful and user-friendly API that will make a real impact.</p></div>
+      <div className="intro"><p tabIndex="0">The EduTechAPI project is a comprehensive and efficient way for developers to access the most up to date data about the latest top tech courses. Built using Node.js and Express, it is designed to be easy to use and integrate into existing systems. Developers can select a tech branch of their choice, and receive a list of courses from the top 5 online education platforms. Join us in creating a powerful and user-friendly API that will make a real impact.</p></div>
       <br/>
-      <h1 tabindex="0" class="selectabranch">Select a branch</h1>
+      <h1 tabIndex="0" className="selectabranch">Select a branch</h1>
       <br/>
       <div className="mainbuttons">
       <button className="mainbutton">Web Development</button>
@@ -34,7 +34,7 @@ export const Main = () => (
       <br/>
       <br/>
       </div>
-      <div class="datadisplay">
+      <div className="datadisplay">
       here is some data
       </div>
     </div>
