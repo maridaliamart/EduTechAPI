@@ -3,43 +3,47 @@
 
 .upperdiv {
   background-color: #006767;
-  border: 0;
-  padding: 50px;
-  margin-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 .Edu {
   text-align: center;
-  font-family: 'K2D', sans-serif;
+  font-family: "K2D", sans-serif;
   font-size: 60px;
   color: #fff;
   border-color: black;
 }
 
 .documentation {
+  font-family: "K2D", sans-serif;
   position: absolute fixed;
-  font-family: Arimo;
-  font-size: small;
   background-color: #fff;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
 }
 
 .docchild {
   display: inline-block;
   text-align: left;
-  max-width: 700px;
+  margin: auto;
 }
 
 .footer {
   padding: 1rem;
-  color: #fff;
+  color: rgb(11, 11, 11);
   position: absolute fixed;
   bottom: 0;
   width: 100%;
-  font-family: Arimo;
+  font-family: "K2D", sans-serif;
   text-align: center;
   background-color: #006767;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 75px;
 }
 
@@ -114,4 +118,121 @@
 .jsondata {
   font-family: Arimo;
   font-size: small;
+}
+
+.documentheader {
+  font-size: 40px;
+}
+
+.aboutheader {
+  font-size: 40px;
+}
+
+.about {
+  position: absolute fixed;
+  font-family: "K2D", sans-serif;
+  font-size: small;
+  background-color: #fff;
+  text-align: center;
+  
+}
+
+.aboutpara {
+  font-family: "K2D", sans-serif;
+  background-color: #fff;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  position:relative;
+  width:1000px;
+  padding:10px;
+  margin: auto;
+  line-height: 1.5em;
+
+}
+
+.datadisplay {
+  position: relative;
+  font-family: "K2D", sans-serif;
+  background-color: #fff;
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+  align-items: center;
+  height: 700px;
+  border-radius: 8px;
+  width:1000px;
+  padding:10px;
+  margin: auto;
+}
+
+.Main {
+  font-family: "K2D", sans-serif;
+  background-color: #fff;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+.intro {
+  font-family: "K2D", sans-serif;
+  background-color: #fff;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  position:relative;
+  width:1000px;
+  padding:10px;
+  margin: auto;
+  line-height: 1.5em;
+}
+
+.mainbuttons {
+  margin: auto;
+  align-items: center;
+}
+
+.mainbutton {
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 7px;
+  width: 120px;
+  height: 70px;
+  text-align: center;
+  font-family: "K2D", sans-serif;
+  vertical-align: top;
+}
+
+.mainbutton:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+  border-radius: 5px;
+}
+
+.selectabranch {
+  font-family: "K2D", sans-serif;
+  margin: auto;
+}
+
+.buttonBack {
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 5px;
+  width: 85px;
+  height: 35px;
+  text-align: center;
+  font-family: "K2D", sans-serif;
+  margin: 5px;
+  font-size: 14px;
+  margin-top: 100px;
+}
+
+.buttonBack:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+  border-radius: 5px;
 }

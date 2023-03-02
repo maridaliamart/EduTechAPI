@@ -13,16 +13,15 @@ const branch = {
 export const Documentation = () => (
   <div class="documentation">
     <div class="docchild">
-    <h1 tabIndex={0}>Documentation</h1>
+    <h1 class="documentheader" tabIndex={0}>Documentation</h1>
     <br />
-    <h2 tabIndex={0}>Overview</h2>
+    <h1 tabIndex={0}>Overview</h1>
     <h3 tabIndex={0}>
       This API allows users to retrieve information about software engineering
       courses. The API returns data in JSON format.
     </h3>
     <br />
     <h1 tabIndex={0}>Endpoints</h1>
-    <br />
     <h3 tabIndex={0}>Courses</h3>
     <h5 tabIndex={0}>
       `GET /courses`: Retrieve a list of all software engineering courses.
@@ -72,6 +71,7 @@ export const Documentation = () => (
       </p>
       <br/>
     </div>
+    <button className='buttonBack' onClick={()=>{goBack()}}>Back</button>
   </div>
   </div>
 );

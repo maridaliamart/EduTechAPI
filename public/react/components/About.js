@@ -1,11 +1,10 @@
 import React from "react";
 
-export const About = () => {
+export const About = () => (
   <div class="about">
-    <h1 class="aboutheader">About</h1>
-    <br />
-    <br />
-    <p class="aboutpara">
+    <h1 tabindex="0" class="aboutheader">About</h1>
+    <div class="aboutpara">
+    <p tabindex="0">
       The EduTech API is a tool designed to help individuals interested in
       pursuing a career in software engineering. This API provides detailed
       information about courses within specific branches of the software
@@ -22,5 +21,7 @@ export const About = () => {
       landscape and make informed decisions about your academic and professional
       future.
     </p>
-  </div>;
-};
+    </div>
+    <button className='buttonBack' onClick={()=>{goBack()}}>Back</button>
+  </div>
+);
