@@ -26,9 +26,7 @@ export const App = () => {
   // 	}
   // }
 
-  // useEffect(() => {
-  // 	fetchUsers();
-  // }, []);
+  
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClose = () => {
@@ -44,9 +42,8 @@ export const App = () => {
    navigate("/")
   };
 
-  const handleSubmit = async (e) => {
-    console.log("this is handle submit", e);
-    const response = await fetch(`${apiURL}/`, {
+  const fetchData = async (e) => {
+    const response = await fetch(`${apiURL}/courses`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -59,6 +56,7 @@ export const App = () => {
       }),
     });
     const data = await response.json();
+    console.log(data)
   };
 
   
@@ -70,6 +68,10 @@ export const App = () => {
   const goToDocumentation = () => {
     navigate("/documentation")
   }
+
+  useEffect(() => {
+  	fetchData();
+  }, []);
 
   return (
     <main>
