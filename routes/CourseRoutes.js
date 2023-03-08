@@ -25,15 +25,18 @@ router.get("/:id/branch", async (req, res) => {
   res.json(branch);
 });
 
+router.get("/:id", async (req, res) => {
+  const courseToFind = await Course.findByPk(req.params.id)
+  res.json(courseToFind)
+})
+
 //Post a course //
-router.post("/", async (req,res) => {
+router.post("/", async (req,res,next) => {
     try {
-        await Course.create({
-            ...req.body
-        })
-        
-        const findAll = await Course.findAll();
-        res.json(findAll);
+       const newCourse = req.body
+       await Course.create(newCourse)
+       const findAll =  await Course.findAll()
+       res.json(findAll)
     } catch (error) {
         console.log(error)
     }
