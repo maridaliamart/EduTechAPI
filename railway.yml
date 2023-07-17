@@ -1,0 +1,10 @@
+name: EduTechAPI
+env: production
+
+build:
+  steps:
+    - run: yarn install
+    - run: yarn build
+
+start:
+  web: yarn start
