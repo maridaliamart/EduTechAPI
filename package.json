@@ -7,7 +7,7 @@
     "test": "jest",
     "client-dev": "parcel public/index.html --open",
     "server-dev": "nodemon server.js",
-    "start": "parcel public/index.html --open && nodemon server.js",
+    "start": "node server.js",
     "dev-test": "nodemon public/index.html"
   },
   "repository": {
