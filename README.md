@@ -3,7 +3,7 @@
 
 The EduTechAPI project is a comprehensive and efficient way for developers to access the most up to date data about the latest top tech courses. Built using Node.js and Express, it is designed to be easy to use and integrate into existing systems. Developers can select a tech branch of their choice, and receive a list of courses from the top 5 online education platforms. Join us in creating a powerful and user-friendly API that will make a real impact.
 
-![Screenshot 2023-02-09 11 40 26 AM](https://user-images.githubusercontent.com/109438051/217884375-7a3e3698-49c3-4059-b244-8b6022ef1367.png)
+![Screenshot 2023-03-02 2 25 00 PM](https://github.com/EduTechAPI/EduTechAPI/assets/109438051/71600580-7e4e-4a1a-afbc-ccc2e3faa30c)
 
 
 ## Collaborators
