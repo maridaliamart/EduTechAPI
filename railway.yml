@@ -1,0 +1,10 @@
+name: EduTechAPI
+env: production
+
+build:
+  steps:
+    - run: npm install --omit=dev
+    - run: npm run build
+
+start:
+  web: npm start

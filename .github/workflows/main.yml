@@ -1,0 +1,41 @@
+name: CI/CD Workflow
+
+on: 
+  push: 
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: nixpacks-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with: 
+          node-version: 14
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the application
+        run: npm run build
+
+deploy: 
+  runs-on: nixpacks-latest
+
+  steps:
+  - name: Checkout code
+    uses: actions/checkout@v2
+
+  - name: Deploy to Railway
+    uses: railwayapp/deploy@v0.9.3
+    with: 
+      args: 'up'
+    env: 
+      RAILWAY_API_KEY: ${{ 1c104ec1-7447-41e0-bb3d-ad0cda075f8b }}
