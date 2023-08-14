@@ -112,7 +112,7 @@ app.use((error, req, res, next) => {
     res.send({error: error.message, name: error.name, message: error.message});
   });
 
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
     db.sync();
     console.log(`Server started on port http://localhost:${port}`);
 })
