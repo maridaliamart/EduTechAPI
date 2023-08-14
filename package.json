@@ -8,6 +8,7 @@
     "client-dev": "parcel public/index.html --open",
     "server-dev": "nodemon server.js",
     "start": "node server.js",
+    "build": "echo 'No build process required'",
     "dev-test": "nodemon public/index.html"
   },
   "repository": {
