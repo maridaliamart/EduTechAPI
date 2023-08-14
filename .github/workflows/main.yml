@@ -37,8 +37,8 @@ jobs:
       - name: Install Railway CLI
         run: npm install -g @railway/cli
 
-      - name: Set Railway API KEY
-        run: railway var:set RAILWAY_API_TOKEN ${{ secrets.RAILWAY_API_KEY }}
+      - name: Login to Railway with API Token
+        run: railway login --api-token ${{ secrets.RAILWAY_API_TOKEN }}
 
       - name: Deploy to Railway
         run: railway up
