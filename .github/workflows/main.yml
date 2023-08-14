@@ -10,7 +10,7 @@ on:
       
 jobs:
   build:
-    runs-on: nixpacks-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
@@ -28,7 +28,7 @@ jobs:
         run: npm run build
 
   deploy:
-    runs-on: nixpacks-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
