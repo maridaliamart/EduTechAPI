@@ -37,7 +37,7 @@ jobs:
       - name: Deploy to Railway
         uses: railwayapp/action@v1
         with:
-          args: 'up'
+          command: 'up'
         env:
           RAILWAY_API_KEY: ${{ secrets.RAILWAY_API_KEY }}
           
