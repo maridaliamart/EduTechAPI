@@ -39,4 +39,4 @@ jobs:
         with:
           args: 'up'
         env:
-          RAILWAY_API_KEY: ${{ 1c104ec1-7447-41e0-bb3d-ad0cda075f8b }}
+          RAILWAY_API_KEY: ${{ <1c104ec1-7447-41e0-bb3d-ad0cda075f8b> }}
