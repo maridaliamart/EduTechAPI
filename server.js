@@ -7,7 +7,7 @@ const { db } = require("./db");
 const jwt = require('jsonwebtoken')
 const { JWT_SECRET } = process.env;
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 const seed = require('./seed')
 
 const { User, Course, Branch } = require('./models')
