@@ -40,3 +40,4 @@ jobs:
           args: 'up'
         env:
           RAILWAY_API_KEY: ${{ secrets.RAILWAY_API_KEY }}
+          
