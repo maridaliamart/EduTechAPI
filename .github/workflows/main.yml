@@ -20,6 +20,9 @@ jobs:
       - name: Install packages
         run: npm install --omit=dev
 
+      - name: Run tests
+        run: npm run test
+
       - name: Install Railway
         run: npm i -g @railway/cli
 
