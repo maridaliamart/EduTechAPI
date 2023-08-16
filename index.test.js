@@ -1,5 +1,5 @@
-const { sequelize } = require("./models/index");
-const { Course, User } = require("./models/index");
+const { sequelize } = require('./models/index'); // Import sequelize object
+const { Course, Branch, User } = require('./models/index');
 
 describe(`Course model`, () => {
   beforeAll(async () => {
@@ -56,6 +56,7 @@ describe(`Users model`, () => {
     const newUser = await User.create({
       name: "Rudolph",
       email: "rudolph@gmail.com",
+      roles: 1 // Assuming roles is an attribute of the User model
     });
     expect(newUser.name).toEqual("Rudolph");
     expect(newUser.email).toEqual("rudolph@gmail.com");
