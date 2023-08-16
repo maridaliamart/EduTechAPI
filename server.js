@@ -1,4 +1,4 @@
-require('dotenv').config('.env');
+require('dotenv').config(); // No need to specify '.env'
 const cors = require('cors');
 const express = require('express');
 const app = express();
@@ -19,33 +19,32 @@ const branchRoutes = require('./routes/BranchRoutes')
 app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
-app.use(express.urlencoded({extended:true}));
+app.use(express.urlencoded({ extended: true }));
 
-seed()
+seed();
 
 const {
   AUTH0_CLIENT_ID,
   AUTH0_SECRET,
   AUTH0_BASE_URL,
   AUTH0_AUDIENCE = 'http://localhost:3000'
-  } = process.env;
-  
-  const config = {
-    authRequired: true, // this is different from the documentation
-    auth0Logout: true,
-    secret: AUTH0_SECRET,
-    baseURL: AUTH0_AUDIENCE,
-    clientID: AUTH0_CLIENT_ID,
-    issuerBaseURL: AUTH0_BASE_URL,
-  };
-  
-  
+} = process.env;
+
+const config = {
+  authRequired: true,
+  auth0Logout: true,
+  secret: AUTH0_SECRET,
+  baseURL: AUTH0_BASE_URL,
+  clientID: AUTH0_CLIENT_ID,
+  issuerBaseURL: AUTH0_BASE_URL
+};
+
 const { auth } = require('express-openid-connect');
 
-app.use(auth(config))
-app.use('/users', userRoutes)
-app.use('/courses', coursesRoutes)
-app.use('/branches', branchRoutes)
+app.use(auth(config));
+app.use('/users', userRoutes);
+app.use('/courses', coursesRoutes);
+app.use('/branches', branchRoutes);
 
 app.use(async (req, res, next) => {
     // like this
@@ -113,6 +112,6 @@ app.use((error, req, res, next) => {
   });
 
 app.listen(port, "0.0.0.0", () => {
-    db.sync();
-    console.log(`Server started on port http://localhost:${port}`);
-})
+  db.sync();
+  console.log(`Server started on port http://localhost:${port}`);
+});
