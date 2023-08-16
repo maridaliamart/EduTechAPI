@@ -27,6 +27,7 @@ const {
   AUTH0_CLIENT_ID,
   AUTH0_SECRET,
   AUTH0_BASE_URL,
+  AUTH0_AUDIENCE = 'http://localhost:3000'
   } = process.env;
   
   const config = {
